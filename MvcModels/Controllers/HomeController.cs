@@ -21,6 +21,17 @@ namespace MvcModels.Controllers
         {
             User user = _userCollection.Single(u => u.UserId == id);
             return View(user);
-        }        
-    }
+        }
+
+		public ActionResult CreateUser()
+		{
+			return View(new User());
+		}
+
+		[HttpPost]
+		public ActionResult CreateUser(User model)
+		{
+			return View("Index", model);
+		}
+	}
 }
