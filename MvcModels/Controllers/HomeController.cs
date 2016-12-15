@@ -38,10 +38,10 @@ namespace MvcModels.Controllers
 		{
 			return View(summary);
 		}
-
-		public ActionResult Names(string[] names)
+		
+		public ActionResult Names(List<string> names)
 		{
-			names = names ?? new string[0];
+			names = names ?? new List<string>();
 			return View(names);
 		}
 	}
