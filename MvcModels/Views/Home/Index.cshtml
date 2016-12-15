@@ -1,0 +1,10 @@
+﻿@model MvcModels.Models.User
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Данные пользователя</h2>
+<div><label>ID:</label>@Html.DisplayFor(m => m.UserId)</div>
+<div><label>Имя:</label>@Html.DisplayFor(m => m.FirstName)</div>
+<div><label>Фамилия:</label>@Html.DisplayFor(m => m.LastName)</div>
+<div><label>Роль:</label>@Html.DisplayFor(m => m.Role)</div>
