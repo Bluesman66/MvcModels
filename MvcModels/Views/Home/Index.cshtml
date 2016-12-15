@@ -1,6 +1,6 @@
 ﻿@model MvcModels.Models.User
 @{
-    ViewBag.Title = "Index";
+	ViewBag.Title = "Index";
 }
 
 <h2>Данные пользователя</h2>
@@ -8,3 +8,5 @@
 <div><label>Имя:</label>@Html.DisplayFor(m => m.FirstName)</div>
 <div><label>Фамилия:</label>@Html.DisplayFor(m => m.LastName)</div>
 <div><label>Роль:</label>@Html.DisplayFor(m => m.Role)</div>
+<div><label>Город:</label>@Html.DisplayFor(m => m.HomeAddress.City)</div>
+<div><label>Страна:</label>@Html.DisplayFor(m => m.HomeAddress.Country)</div>
