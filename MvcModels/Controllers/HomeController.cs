@@ -44,11 +44,11 @@ namespace MvcModels.Controllers
 			names = names ?? new List<string>();
 			return View(names);
 		}
-		
-		public ActionResult Address()
+
+		public ActionResult Address(FormCollection formData)
 		{
 			List<AdressSummary> addresses = new List<AdressSummary>();
-			UpdateModel(addresses, new FormValueProvider(ControllerContext));
+			UpdateModel(addresses, formData);
 			return View(addresses);
 		}
 	}
