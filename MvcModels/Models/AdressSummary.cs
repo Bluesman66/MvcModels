@@ -1,8 +1,5 @@
-﻿using System.Web.Mvc;
-
-namespace MvcModels.Models
-{
-	[Bind(Include = "City")]
+﻿namespace MvcModels.Models
+{	
 	public class AdressSummary
     {
         public string City { get; set; }

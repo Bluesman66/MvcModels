@@ -44,5 +44,11 @@ namespace MvcModels.Controllers
 			names = names ?? new List<string>();
 			return View(names);
 		}
+
+		public ActionResult Address(List<AdressSummary> addresses)
+		{
+			addresses = addresses ?? new List<AdressSummary>();
+			return View(addresses);
+		}
 	}
 }
