@@ -48,7 +48,14 @@ namespace MvcModels.Controllers
 		public ActionResult Address(FormCollection formData)
 		{
 			List<AdressSummary> addresses = new List<AdressSummary>();
-			UpdateModel(addresses, formData);
+			try
+			{
+				UpdateModel(addresses, formData);
+			}
+			catch (InvalidOperationException exception)
+			{
+				// Отобразить ошибку пользователю
+			}
 			return View(addresses);
 		}
 	}
