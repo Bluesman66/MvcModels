@@ -13,8 +13,7 @@ namespace MvcModels
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-			ModelBinders.Binders.Add(typeof(MvcModels.Models.AdressSummary), new AddressSummaryBinder());
+            RouteConfig.RegisterRoutes(RouteTable.Routes);			
 		}
     }
 }

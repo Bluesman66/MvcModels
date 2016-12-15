@@ -1,5 +1,9 @@
-﻿namespace MvcModels.Models
-{	
+﻿using MvcModels.Infrastructure;
+using System.Web.Mvc;
+
+namespace MvcModels.Models
+{
+	[ModelBinder(typeof(AddressSummaryBinder))]
 	public class AdressSummary
     {
         public string City { get; set; }
